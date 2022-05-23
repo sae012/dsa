@@ -1,0 +1,203 @@
+Title Theory - Construct _an_expression tree from the given. -prefixx expression_eg. +--abc/def_and_traverse it using.. post order traversal Cnon recursive) and then_delete the Lentire tree.
+
+Objective i)Combines_advantages of an ordered_ _array_a
+
+and a
+
+linked_list. fi) Searching as fast as in ordered array. i) Fundamental data storage structure used in programming...
+
+Theory
+
+Expression Trees : When an expression is represented through a tree, it is known as expression tree. The leaves of an expression tree are operands, such as constants or variables nomes and all internal nodes contain operations. Figure gives an example. of an expression tree. Catb c) *e+f
+
+A preorder traversal on the expression tree gives prefixe equivalent of the expression. A postorder traversal on the expression tree gives postfix equivalent of the expression_ Prefis Cexpression tree of figure) +
+
+=++a beef Postfix Cexpression tree of figure) = abc te* f *
+
+Constructing an expression_tree
+
+Here, we will discuss_an_algorithm for constructing- an expression tree from a postfix expression. In case an. expression tree is to be converted from infin expression, Linfix expression should be converted to postfix.
+
+Algorithm
+
+We read our expression one symbol at a time. If the
+
+sybol is an operand, we create a one node tree and push.a
+
+pointer to it onto a stack. If the symbol is an operator,
+
+we pop pointer to two trees T₂ and T1 from the stack and
+
+form a new tree whose root is the operator and whose
+
+left and right childern point to T₁ and T₂ respectively.
+
+A pointer to this new tree is then pushed onto the stack.
+
+As an example, suppose the input is abe * + e* f+ 12 The first three symbols are operands, so we create one node trees push pointers to them onto a stack.
+
+2) Next, 4* is read, so two pointers to tree are popped, a new tree is formed, and a pointer to it is
+
+pushed onto the stack.
+
+3 Next, a t_ is read, so two pointers. to tree are popped, a new tree is. formed, and a pointer to it is. pushed onto the stack..
+
+4) Next, e is_read_ a_one Dode tree is created and a pointer to it is pushed on to the stack.
+
+
+5) Next, a is read, so two pointers. to tree are popped, a new tree is formed, and a pointer to it is pushed onto the stack.
+7) Finally, at is read, two trees. are merged, and a pointer to the final tree is pushed on the stack.
+
+
+
+
+
+*****************************************************************************************************************************************************************************
+
+
+Title - Implementation of a direct access file-Insertion and _deletion of a record from a direct access file
+
+Objective To understand concept of direct access file - Insertion. and deletion.
+
+Theory
+
+1) Different types of organizing the file.
+
+__i). Sequential file organization. ii) Heap file organization...
+
+iii) Hash file organization.
+
+iv) Bt tree file organization. v) Clustered file organization.
+
+2) Direct access file organization. i) Direct access file is also known as random access or relative file organization. ii) In direct access file, all records are stored in direct access storage devices, such as hard disk. The
+
+records are randomly placed throughout the file.
+
+iii) The records close not need to be in sequence becz
+
+they are updated directly and rewritten back in the
+
+Same location. iv) This file organization is useful for immediate access.
+
+to large amount of information. It is used in accessing. large databases. v) It is also called as hashing...
+
+3) Difference beth sequential file and direct access.
+
+Sequential file access
+
+Information in the file. is processed in order one record after the other.
+
+When we used read commond, it move ahead.
+
+Pointer by one.
+
+iii)Data is entered in. Lentry_sequential order
+
+iv) Duplicate data be. allowed.
+
+Access is slow
+
+Direct file access
+
+i) A field length logical record. that allow the program to
+
+read & write record rapidly in. no particular order.
+
+ii) there is no restriction on the _order of reading & writing for a direct access file.
+
+iii) Data is entered in PRN number
+
+iv) Duplicate data is not
+
+allowed
+
+Access is faster than Sequential access
+
+4) Advantages of direct access file organization :
+
+i) Direct access file helps in online transcation processing systern like online railway reservation system.
+
+ii) Indirect access file sorting of the records are not
+
+
+Insertion:
+
+- Insertion operator is used to insert one or more data. elements into an array. Based on requirementis , new clernen can be added of the beginning, and or any given index.
+
+of array: -Insertion operator is basically used to add an element in the given index.
+
+Deletioni
+
+operation_refers to removing an from the array and re-organizing all elements of an array. existing element
+
+- It is basically used to delete the data.
+
+Algorithm for insertion - 1. Start
+
+2. Set J K
+
+3. Repeat steps 4 + 5 while JK 4. set LA = LACJ-1]
+
+5 set JJ-1
+
+6 Stop
+
+Algorithm for deletion -
+
+1. Start 2. set Jak
+
+3. Repeat the steps 4 4 5 while JCN.
+
+4. Set LA_CT] = LACJ+] 5. Set JI+1
+
+6 Set N= N-1
+
+7 Stop
+
+
+***********************************************************************************************************************************************
+
+
+
+Title - Represent a given_graph_using_adjacency matrix list to perform DFS_ and _ using_adjacency_list to perform BES. Use the map of the area around the college as_ the graph. Identify the prominent land marks as nodes. and perform DES and BFS on that.
+
+Objective -
+
+1. To identify directed and undirected graph. 12. To represent graph using adjacency matrixe and list. 13. To traverse program to the graph.
+
+Theory
+
+A graph is a non-linear data structure consisting of nodes. and edges. The nodes are sometimes also referred to as vertices and the edges are lines or ares that connect any two nodes in the graph. More formally La Graph can be defined as, A_Graph_ consists of a Finite set of vertices (or_nodes) and set of Edges which connect a pair of nodes.
+
+Edge
+
+Vertices
+
+A graph is a data structure that consists of the following two components: 1. A finite set of vertices also called as nodes.
+
+2. A_ finite set of ordered pair of the form (4₁v). called as edge. The pair is ordered because (uiv) is. not the same as as Cv₁u) in case of a directed graph... Cdi-graph). The pair of the form (u, v) indicates that. there is an edge from vertex u to vertex V.. The... edges_may contain weight / value / cost. The following two are the most commonly used. representation of a graph. 1- Adjacency Matrix
+
+2. Adjacency List There are other representations also like, Incidence. Matrix and Incidence List. The choice of graph. representation is situation specific. It totally depends. on the type of operations to be performed and ease of use.
+
+Adjacency Matrix Adjacency Matrix is a 2D array of size VXV where_v_is the number of vertices in a graph. Let the 2D_array_ be adj [][], a slot_ adj.[i][j] = 1 indicates that there is an edge from vertex i to vertex j. Adjacency matrise for undirected graph is always symmetric. Adjacency matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertes i to vertex j with weight w.
+
+
+Adjacency list An_array_of_lists is used. The size of the array is equal_ to the number of vertices. Let the array be an array [... An entry_array (il represents the list of vertices adjacent to the ith_vertex. This representation can also be used to represent a weighted graph. The weights of edges can be represented as lists of pairs.. Following is the adjacency list representation of the Labave graph
+
+Breadth First Search or BES is a graph traversal algorithm. •It is used for traversing or searching a graph in a Systematic fashion: • BFS_uses_a_ strategy that searches in the graph in
+
+breadth first manner whenever possible..
+
+• Queue data structure is used in the implementation.
+
+.
+
+lof breadth first search Breadth First Traversal (or search) for a graph is similar to Breadth First Traversal of a tree. Graphs may contain cycles, so we may come to the same node again. To avoid processing a node more than once, we use a boolean visited array. For simplicity, it is assumed that all vertices are rechable from the starting Verteoc
+
+Algorithm
+
+1) Create a recursive function that makes. of node and a visited array: th
+
+2) Mark the current_ the hode.. node as visited an
+
+|3) Traverse all the adjacent and unmarked_ call the recursive function with index node
